@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark_Slate_Grey: hsl(234, 29%, 20%);
+  --Charcoal_Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title, .paragraph {
+  color: var(--Dark_Slate_Grey);
+}
+
+.button {
+  background-color: var(--Dark_Slate_Grey);
+  color: var(--White);
+  border-radius: 0.8rem;
+  border: none;
+  font-weight: 700;
+}
+
+.conteiner .card .Sign-up-form .image {
+  background-image: url(../assets/images/illustration-sign-up-mobile.svg);
+  background-size: 37.5rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 28.8rem;
+}
+.conteiner .card .Sign-up-form .content-box {
+  padding: 3.5rem 2rem 2rem 2rem;
+}
+.conteiner .card .Sign-up-form .content-box .title {
+  font-size: 3.9rem;
+  font-weight: 700;
+}
+.conteiner .card .Sign-up-form .content-box .paragraph {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0.01rem;
+  padding-right: 3rem;
+}
+.conteiner .card .Sign-up-form .content-box .list {
+  list-style: none;
+  margin-top: 2.2rem;
+  padding-right: 3.4rem;
+}
+.conteiner .card .Sign-up-form .content-box .list .point {
+  display: flex;
+  -moz-column-gap: 1.3rem;
+       column-gap: 1.3rem;
+  padding-bottom: 1.2rem;
+}
+.conteiner .card .Sign-up-form .content-box .list .point img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.conteiner .card .Sign-up-form .content-box .list .point .point-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.conteiner .card .Sign-up-form .content-box #form {
+  margin-top: 2rem;
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .container-texts {
+  display: flex;
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .container-texts .text-input, .conteiner .card .Sign-up-form .content-box #form .conteiner-input .container-texts .text-error {
+  font-size: 1.22rem;
+  font-weight: 700;
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .container-texts .text-input {
+  flex: 1;
+  color: var(--Dark_Slate_Grey);
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .container-texts .text-error {
+  display: none;
+  color: var(--Tomato);
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .input-email {
+  margin-top: 1rem;
+  height: 4.8rem;
+  padding-left: 2rem;
+  border: 1px solid;
+  border-color: var(--Grey);
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  width: 100%;
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .input-email::-moz-placeholder {
+  color: var(--Grey);
+}
+.conteiner .card .Sign-up-form .content-box #form .conteiner-input .input-email::placeholder {
+  color: var(--Grey);
+}
+.conteiner .card .Sign-up-form .content-box #form .button {
+  margin-top: 1.8rem;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.4rem;
+}
+.conteiner .card .Success-message {
+  display: none;
+  padding: 13rem 2.3rem 2rem 2.3rem;
+}
+.conteiner .card .Success-message img {
+  width: 6em;
+  height: 6rem;
+}
+.conteiner .card .Success-message .title {
+  margin-top: 3.5rem;
+  font-size: 3.8rem;
+}
+.conteiner .card .Success-message .paragraph {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.conteiner .card .Success-message .paragraph #gmail-user {
+  font-weight: 700;
+}
+.conteiner .card .Success-message .button {
+  margin-top: 21rem;
+  width: 100%;
+  height: 5rem;
+}
+
+@media (min-width: 376px) {
+  .conteiner .card .Sign-up-form .image {
+    background-size: 100%;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+  }
+}
+@media (min-width: 710px) {
+  body {
+    background-color: var(--Charcoal_Grey);
+  }
+  .button {
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: var(--Tomato);
+    color: var(--White);
+    box-shadow: 0 0.2rem 2rem rgba(255, 98, 87, 0.701);
+  }
+  .conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+  .conteiner .card {
+    background-color: var(--White);
+    border-radius: 3rem;
+    padding: 2rem 2rem 2rem 3rem;
+  }
+  .conteiner .card .Sign-up-form {
+    max-width: 70rem;
+    display: flex;
+    flex-direction: row-reverse;
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+  .conteiner .card .Sign-up-form .image {
+    background-image: url(../assets/images/illustration-sign-up-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    width: 40rem;
+    height: 48rem;
+    border-radius: 1.4rem;
+  }
+  .conteiner .card .Sign-up-form .content-box {
+    padding-right: 0;
+  }
+  .conteiner .card .Sign-up-form .content-box .title {
+    font-size: 4.3rem;
+  }
+  .conteiner .card .Sign-up-form .content-box .paragraph {
+    padding-right: 0;
+  }
+  .conteiner .card .Sign-up-form .content-box .list {
+    padding-right: 0;
+  }
+  .conteiner .card .Sign-up-form .content-box #form, .conteiner .card .Sign-up-form .content-box .conteiner-input .input-email {
+    cursor: pointer;
+  }
+  .conteiner .card .Success-message {
+    display: none;
+    padding: 0;
+    padding-top: 2.3rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1.9rem;
+  }
+  .conteiner .card .Success-message img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .conteiner .card .Success-message .title {
+    width: 23rem;
+    margin-top: 2.6rem;
+    font-size: 3.8rem;
+    letter-spacing: 0.1rem;
+  }
+  .conteiner .card .Success-message .paragraph {
+    width: 31.3rem;
+  }
+  .conteiner .card .Success-message .button {
+    margin-top: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
