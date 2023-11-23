@@ -33,6 +33,9 @@ body {
   font-weight: 700;
 }
 
+.conteiner {
+  overflow: hidden;
+}
 .conteiner .card .Sign-up-form .image {
   background-image: url(../assets/images/illustration-sign-up-mobile.svg);
   background-size: 37.5rem;

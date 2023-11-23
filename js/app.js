@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
             const $cardMensaje = document.querySelector('.Success-message')
             const $email = document.getElementById('gmail-user')
             const $buttonDismiss = document.getElementById('dismiss')
-            console.log(`Corre enviado ${datos[1]}`)
-            
+         
+
             $formulario.style.display = 'none';
             $cardMensaje.style.display = 'block';
             $email.textContent = datos[1];
