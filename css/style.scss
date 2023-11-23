@@ -37,12 +37,12 @@ body{
 .conteiner{
     .card{
         .Sign-up-form{
-            // display: none;
             .image{
                 background-image: url(../assets/images/illustration-sign-up-mobile.svg);
                 background-size: 37.5rem;
                 background-position: top;
                 background-repeat: no-repeat;
+                // background-color: rgba(229, 31, 31, 0.083);
                 height: 28.8rem;  
             }
             .content-box{
@@ -108,9 +108,11 @@ body{
                             border-radius: 0.6rem;
                             font-size: 1.4rem;
                             width: 100%;
+                            outline: none;
                             &::placeholder{
                                 color: var(--Grey);
                             }
+                            
                         } 
                        
                     }
@@ -124,7 +126,7 @@ body{
             }
         }
         .Success-message{
-            display: none;
+            display: none; 
             padding: 13rem 2.3rem 2rem 2.3rem;
             img{
                 width: 6em;

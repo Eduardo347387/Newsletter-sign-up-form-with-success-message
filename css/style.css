@@ -101,6 +101,7 @@ body {
   border-radius: 0.6rem;
   font-size: 1.4rem;
   width: 100%;
+  outline: none;
 }
 .conteiner .card .Sign-up-form .content-box #form .conteiner-input .input-email::-moz-placeholder {
   color: var(--Grey);
